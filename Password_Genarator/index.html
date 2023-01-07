@@ -18,7 +18,14 @@
 
         <h1>Pass Genarator</h1>
 
-        <input type="text" placeholder="Password">
+        <input id="pass" type="text" placeholder="Password">
+
+        <div class="length">
+            <p style="font-weight: 600;">LENGTH: </p>
+            <p id="num-display"></p>
+        </div>
+
+        <input id="range" type="range" max="18" step="1" value="9">
 
         <div class="checkboxes">
             <div class="input-group">
@@ -26,7 +33,7 @@
                 <label for="nums">Use Numbers</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" name="" id="simbols">
+                <input type="checkbox" name="" id="symbols">
                 <label for="simbols">Use Simbols</label>
             </div>
             <div class="input-group">
@@ -38,6 +45,8 @@
         <button id="generate-btn">Generate</button>
 
     </div>
+
+    <script src="assets/js/app.js"></script>
 
 </body>
 
